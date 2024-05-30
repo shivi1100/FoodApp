@@ -1,0 +1,236 @@
+/* CSS RESET */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* Css Variables */
+:root{
+    --navbar-height:56px;
+}
+ /* Navigation Bar */
+ #navbar{
+     display: flex;
+     align-items: center;
+     position: relative;
+     top: 0px;
+
+ }
+ #navbar::before{
+     content: '';
+     background-color: rgb(236, 231, 231);
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     opacity: 0.3;
+    }
+   /* Navigation Bar:logo / image */
+#logo{
+    margin: 10px 10px;
+
+}
+#logo img{
+    margin: 2px 9px;
+        height: 52px;
+        }
+/* Navigation Bar:list styling */
+ 
+  #navbar ul{
+    display: flex
+    
+}
+ #navbar ul li{
+      list-style: none;
+      font-size: 1.3rem;
+  }
+   #navbar ul li a{
+       color: white;
+       display: block;
+       padding:5px 13px;
+       text-decoration: none;
+       border-radius: 20px;
+       font-family: 'Berkshire Swash', cursive;
+   }
+      #navbar ul li a:hover{
+         background-color: white;
+         color: black;
+        
+      }
+      /* Home Section  */
+      #home{
+          display: flex;
+          flex-direction: column;
+          padding: 2px 200px;
+          align-items: center;
+          justify-content: center;
+          height: 507px;
+          top: 0px;
+          left: 0px;
+          
+          }
+          #home::before{
+            content: '';
+            background:url('../img/8pg4d-0NG3KRTWE8F-Full-Image_GalleryBackground-en-US-1554535973450._RI_.jpg') no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 591px;
+            z-index: -1;
+            opacity: 0.85;
+            top: 0px;
+            left: 0px;
+            
+          }
+          #home h1{
+              color: white;
+              text-align: center;
+              font-family: 'Courgette', cursive
+          }
+          #home p{
+              color:rgb(238, 236, 243);
+              text-align: center;
+              font-size: 1.3rem;
+              font-family: 'Berkshire Swash', cursive;
+
+          }
+          /* Services section */
+          #services{
+              margin: 2px;
+              display: flex;
+            
+    
+              }
+          #services .box{
+              border: 2px solid red;
+              border-radius: 30px;
+              margin: 20px 39px;
+              padding: 15px;
+              background-color: rgb(213 210 210);
+              cursor: pointer;
+          }
+          #services .box p{
+              font-family: 'Berkshire Swash', cursive;
+
+          }
+          #services .box img{
+            
+              height: 150px;
+              margin: auto;
+              display: block;
+               }
+               #services .box img:hover{
+                box-shadow:3px 5px 24px rgb(168, 47, 199);
+                 } 
+
+          /* Client Section */
+             #client-section{
+                 height: 400px;
+
+             }
+             #client-section::before{
+                 content: " ";
+                 position: absolute;
+                 height: 400px;
+                 width: 100%;
+                 background: url('../img/background.jpg') ;
+                  z-index: -1;
+                 opacity: 0.68;
+             }
+
+               #client{
+                display: flex;
+                 justify-content: center;
+                 align-items: center;
+            }
+                 .client-item{
+                     padding: 7px;
+                 }
+            #client img{
+                margin: 3px;
+                height: 100px;
+               }
+                
+               /* contact section */
+                #contact{
+                    position: relative;
+                }
+                    
+
+                #contact::before{
+                    content: " ";
+                      position: absolute;
+                      top: 0px;
+                      width: 100%;
+                      height: 100%;
+                      z-index: -1;
+                      opacity: 0.5;
+                      background: url('../img/businessman-hand-holding-smart-phone-with-icon-mobile-phone-mail-telephone-address-customer-service-call-center-contact-us-concept_20693-208.jpg') no-repeat center center/cover;
+                }
+                    #contact-box{ 
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                   padding-bottom: 34px;
+                }
+                #contact-box input,
+                #contact-box textarea{
+                    width: 100%;
+                    padding: 0.5rem;
+                    border-radius: 12px;
+                    font-size: 1rem;
+                }
+                #contact-box form{
+                    width: 530px;
+                }
+                #contact-box label{
+                    font-size: 1.3rem;
+                    font-family:'Berkshire Swash', cursive;
+                }
+
+                footer{
+                    background-color: maroon;
+                    color: white;
+                    padding: 2px 10px;
+                }
+          /* utility classes  */ 
+           .h-primary{
+               font-size: 3.8rem;
+               padding: 18px;
+               font-family: 'Berkshire Swash', cursive; 
+                }
+           .h-secondary{
+               font-size: 1.8rem;
+               padding: 7px;
+               font-family: 'Berkshire Swash', cursive; 
+                }
+          .btn{
+              padding: 6px 30px;
+              margin: 6px;
+              border-radius: 20px;
+              background-color:whitesmoke;
+              color:rgb(82, 10, 10);
+              font-size: 1.5rem;
+              font-family: 'Berkshire Swash', cursive; 
+              cursor: pointer;
+              border: 2px solid white;
+              
+          }
+          .btn:hover{
+              background-color:rgb(107, 20, 4);
+              box-shadow: 3px 4px 20px rgb(248, 244, 242);
+              color:rgb(248, 246, 246);
+              
+          }
+          .center{
+              text-align: center;
+          }
+              
+              
+
+          
+
+  
+
+    
